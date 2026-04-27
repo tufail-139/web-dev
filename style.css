@@ -1,27 +1,67 @@
 body {
   font-family: Arial;
   text-align: center;
+  background: #0f172a;
+  color: white;
 }
 
 .table {
   display: grid;
   grid-template-columns: repeat(18, 50px);
-  gap: 5px;
+  gap: 6px;
   justify-content: center;
   margin-bottom: 20px;
 }
 
 .el {
-  border: 1px solid black;
+  border-radius: 8px;
   padding: 10px;
-  background: lightblue;
   font-size: 12px;
+  font-weight: bold;
+  transition: transform 0.2s;
 }
+
+/* Hover effect */
+.el:hover {
+  transform: scale(1.15);
+  cursor: pointer;
+}
+
+/* CATEGORY COLORS */
+
+/* Alkali metals */
+.alkali { background: #f87171; }
+
+/* Alkaline earth */
+.alkaline { background: #fb923c; }
+
+/* Transition metals */
+.transition { background: #60a5fa; }
+
+/* Post-transition */
+.post { background: #34d399; }
+
+/* Metalloids */
+.metalloid { background: #a78bfa; }
+
+/* Nonmetals */
+.nonmetal { background: #22d3ee; }
+
+/* Halogens */
+.halogen { background: #facc15; color: black; }
+
+/* Noble gases */
+.noble { background: #f472b6; }
+
+/* Lanthanides */
+.lanth { background: #c084fc; }
+
+/* Actinides */
+.act { background: #fb7185; }
 
 .fblock {
   display: grid;
   grid-template-columns: repeat(15, 50px);
-  gap: 5px;
+  gap: 6px;
   justify-content: center;
-  margin-top: 10px;
 }
